@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-image: url("https://t4.ftcdn.net/jpg/08/10/61/15/360_F_810611548_qpoLWNsgmFC9ZbPloLf7v1MXyWsnFqZv.jpg"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+
+        .img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin: 0px;
+            padding: 0;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            z-index: -1;
+
+        }
+
+       
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000000;
+            margin-top: 2px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 67px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: -4px 5px 12px rgb(0 0 0 / 67%);
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            resize: vertical;
+            height: 150px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating label {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        .rating label:before {
+            content: '\2605'; /* Star symbol */
+            font-size: 20px;
+            color: #ccc;
+        }
+
+        .rating input[type="radio"]:checked ~ label:before {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="img">
+
+        <img src="https://t4.ftcdn.net/jpg/08/10/61/15/360_F_810611548_qpoLWNsgmFC9ZbPloLf7v1MXyWsnFqZv.jpg" width="100%" height="100%">
+
+    </div>
+
+    
+
+    <h1>We Want Your Feedback</h1>
+
+    <form id="feedbackForm">
+
+        <label for="rating">Overall Rating:</label>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"></label>
+        </div>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+   
+
+</body>
+</html>

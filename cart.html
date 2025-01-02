@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/view-ready-eat-delicious-meal-go_23-2151431768.jpg?semt=ais_hybrid");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        form {
+            background-color: rgb(245 187 62 / 54%);
+            box-shadow: rgb(216 136 21 / 29%) -7px 6px 14px;
+
+            width: 677px;
+            margin: 4rem auto;
+            padding: 3rem;
+            border-radius: 60px;
+        }
+
+        th {
+            font-size: 25px;
+            font-family: cursive;
+        }
+
+        .name {
+            font-size: 18px;
+            font-family: cursive;
+
+
+        }
+
+        /* table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+        } */
+        .coupon-code input[type="button"] {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cart-totals {
+            font-weight: bold;
+        }
+
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+ 
+
+
+
+
+        .subtotal {
+            font-weight: bold;
+        }
+
+        .coupon-code {
+            display: flex;
+            align-items: center;
+        }
+
+        .coupon-code input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: -92px;
+            flex-grow: 1;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bringing
+        the heart of India to your street—taste the richness of authentic flavors.”</h1>
+
+    <form>
+        <table align="center" cellpadding="10px">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Panjeeri..JPG/480px-Panjeeri..JPG"
+                        width="100" height="100" /></td>
+                <td class="name">Panjeeri</td>
+                <td>Rs. 270 /-</td>
+                <td><input type="text" size="2" value="1" readonly /></td>
+                <td>Rs. 270 /-</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Annapurna_Naan.jpg/480px-Annapurna_Naan.jpg"
+                        width="100" height="100" /></td>
+                <td class="name">Naan </td>
+                <td>Rs. 150 /- </td>
+                <td><input type="text" size="2" value="1" readonly /></td>
+                <td>Rs. 150 /- </td>
+            </tr>
+            <tr>
+                <th colspan="2">Promotion Code</td>
+                <th colspan="3" class="cart-totals">Cart Totals</td>
+            </tr>
+            <tr>
+                <td class="coupon-code" colspan="2">
+                    <input  type="text" placeholder="Coupon code" /> &nbsp; <input type="button"
+                        value="Apply Coupon" />
+                </td>
+                <th colspan="2">Subtotal</th>
+                <td>Rs.450/-</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <th colspan="2">Total</th>
+                <th>Rs.350/-</th>
+            </tr>
+            <tr>
+                <td colspan="5" align="right"><input class="checkout-button" type="button"
+                        value="Proceed to Checkout" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

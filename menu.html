@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Background image */
+            background-image: url('https://img.freepik.com/premium-photo/bhai-bhoj-hindu-background-concept_1279558-17289.jpg?semt=ais_hybrid');
+            /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+       
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            /* Center items vertically */
+            margin-bottom: 1rem;
+        }
+
+        .menu-item img {
+            width: 150px;
+            margin-right: 1rem;
+            border-radius: 5px;
+        }
+
+        header {
+            background-color: #333;
+            color: #040404;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+       
+
+        
+
+
+        .main1 {
+            width: 1000px;
+            margin: 5rem auto;
+            padding: 5rem;
+            background-color: rgb(219 213 15 / 22%);
+            box-shadow: rgb(117 145 63 / 65%) 0px 2px 5px;
+            border-radius: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+            
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .name{
+            font-size: 28px;
+            font-family:'cursive';
+            color: #060708;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 22px;
+            color: black;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+
+
+    <main>
+        <div class="main1">
+        <h2>Starters</h2>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Shahi_paneer.jpg/180px-Shahi_paneer.jpg"
+                alt="Rajwadi Chhena/Paneer">
+            <span class="name">Rajwadi Chhena/Paneer </span>
+            <span class="price"> 300rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Aloo_Tikki_served_with_chutneys.jpg/180px-Aloo_Tikki_served_with_chutneys.jpg"
+                alt="Aloo tikki">
+            <span class="name">Aloo tikki</span>
+            <span class="price">150rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Chana_masala.jpg/180px-Chana_masala.jpg"
+                alt="Chole bhature">
+            <span class="name">Chole bhature</span>
+            <span class="price">50rs-</span>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Poha%2C_a_snack_made_of_flattened_rice.jpg/180px-Poha%2C_a_snack_made_of_flattened_rice.jpg"
+                alt="Poha">
+            <span class="name">Poha</span>
+            <span class="price">50rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Aloo_gobi_matar_ki_sabji.jpg/180px-Aloo_gobi_matar_ki_sabji.jpg"
+                alt="Gobhi matar">
+            <span class="name">Gobhi matar</span>
+            <span class="price">100rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Dal_Makhani.jpg/180px-Dal_Makhani.jpg"
+                alt="Dal">
+            <span class="name">Dal</span>
+            <span class="price">120rs-</span>
+        </div>
+
+    
+
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Milk_Powder_Gulab_Jamun_by_Preeti_Tamilarasan.jpg/318px-Milk_Powder_Gulab_Jamun_by_Preeti_Tamilarasan.jpg"
+                alt="Gulab jamun">
+            <span class="name">Gulab jamun</span>
+            <span class="price">20rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jalebi-_Kolkata_-_West_Bengal_-_DSC_0011.jpg/480px-Jalebi-_Kolkata_-_West_Bengal_-_DSC_0011.jpg"
+                alt="Jalebi">
+            <span class="name">Jalebi</span>
+            <span class="price">30rs-</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Almond_Khoa_based_burfi_Mumbai_India_%28cropped%29.jpg/480px-Almond_Khoa_based_burfi_Mumbai_India_%28cropped%29.jpg"
+                alt="Barfi">
+            <span class="name">Barfi </span>
+            <span class="price">70rs-</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Your Restaurant
+    </footer>
+
+</body>
+
+</html>
